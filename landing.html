@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="./landing.css" />
+  </head>
+  <body>
+    <article class="list beet2">
+			<div class="list__fixed fixed">
+				<p>Stores List</p>
+			</div>
+        <div class="list__input beet" >
+          <input type="text" placeholder="Search" class="inputStyle"/>
+          <div class="list__inputControl beet">
+            <div class="list__lupa center" type="search">
+							<img src="../images/lupa.png"  />
+							<div class="showed">Search</div>
+            </div>
+            <div class="list__rotate center">
+							<img src="../images/rotate.png" alt="" type="change"/>
+							<div class="showed">Refresh</div>
+            </div>
+            <div class="list__clear center">
+              <img src="../images/cross.png" alt="">
+              <div class="showed">Clear</div>
+            </div>
+          </div>
+        </div>
+        <div class="list__manage manage center">
+          <div class="manage__line"></div>
+          <div class="manage__block beet">
+            <div class="manage__content">
+							<img src="../images/arrowUp.png" class="rotate" />
+							<p class="showed">go up</p>
+            </div>
+            <div class="manage__content">
+							<img src="../images/pin.png" alt="" />
+							<p class="showed">pin</p>
+            </div>
+          </div>
+        </div>
+			<div class="list__blocko">
+      </div>
+      <div class="list__hideBlock"></div>
+    </article>
+    <main>
+      <div class="nothing center">
+        <div class="nothing__block beet2">
+            <img src="../images/house.png" alt="">
+            <p>Store is not selected</p>
+        </div>
+      </div>
+
+      <header class="head">
+        <div class="head__fixed fixed">
+          <p>Store Details</p>
+        </div>
+        <div class="head__info beet" >
+          <div class="head__block1 beet2">
+            <div class="head__tag">
+              <span>Email</span>
+              <p data="Email"></p>
+            </div>
+            <div class="head__tag">
+              <span>Phone Number</span>
+              <p data="PhoneNumber"></p>
+            </div>
+            <div class="head__tag">
+              <span>Address</span>
+              <p data="Address"></p>
+            </div>
+          </div>
+          <div class="head__block2 beet2">
+            <div class="head__tag">
+              <span>Established Date</span>
+              <p data="Established"></p>
+            </div>
+            <div class="head__tag">
+              <span>Floor Area</span>
+              <p data="FloorArea"></p>
+            </div>
+          </div>
+        </div>
+        <div class="head__manage manage center">
+          <div class="manage__line"></div>
+          <div class="manage__block beet">
+            <div class="manage__content">
+							<img src="../images/arrowUp.png" alt="" class="rotate"/>
+							<div class="showed">Go Up</div>
+            </div>
+            <div class="manage__content">
+							<img src="../images/pin.png" alt="" />
+							<div class="showed">Pin</div>
+            </div>
+          </div>
+        </div>
+        <div class="head__data beet">
+          <div class="head__control beet2">
+            <div class="head__title beet">
+              <p class="head__productNumber"></p>
+              <p>All</p>
+            </div>
+            <div class="head__activeLine"></div>
+          </div>
+          <div class="head__line"></div>
+          <div class="head__control beet2">
+            <div class="head__circle beet2">
+              <div class="head__ball center" id="green">
+                <img src="../images/ok.png" alt="" />
+                <p class="head__up" type="ok"></p>
+              </div>
+              <p class="head__comment">ok</p>
+            </div>
+            <div class="head__activeLine"></div>
+          </div>
+          <div class="head__control beet2">
+            <div class="head__circle beet2">
+              <div class="head__ball center" id="yellow">
+                <img src="../images/warning.png" alt="" />
+                <p class="head__up" type="storage"></p>
+              </div>
+              <p class="head__comment">storage</p>
+            </div>
+            <div class="head__activeLine"></div>
+          </div>
+          <div class="head__control beet2">
+            <div class="head__circle beet2">
+              <div class="head__ball center" id="red">
+                <img src="../images/stop.png" alt="" />
+                <p class="head__up" type="out"></p>
+              </div>
+              <p class="head__comment">out of stock</p>
+            </div>
+            <div class="head__activeLine"></div>
+          </div>
+        </div>
+        <div class="head__finalLine"></div>
+      </header>
+      <div class="footer">
+        <div class="footer__line1 beet">
+          <p>Products</p>
+          <div class="footer__input">
+            <input type="text" class="inputStyle" placeholder="Search by product">
+            <div class="footer__lupa center">
+              <img src="../images/lupa.png" type="search2" />
+            </div>
+          </div>
+        </div>
+        <div class="footer__line2"></div>
+        <div class="footer__columns gap">
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="Name">
+							<dic class="center" change="A">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="Z">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Name</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="Price">
+							<dic class="center" change="+">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="-">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Price</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="Specs">
+							<dic class="center" change="A">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="Z">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Specs</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="SupplierInfo">
+							<dic class="center" change="A">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="Z">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>SupplierInfo</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="MadeIn">
+							<dic class="center" change="A">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="Z">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Country of design</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="ProductionCompanyName">
+							<dic class="center" change="A">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="Z">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Prod. company</p>
+          </div>
+          <div class="footer__column beet">
+            <div class="footer__swipe beet2" column="Rating">
+							<dic class="center" change="+">
+								<img src="../images/switchUp.png" alt="" >
+							</dic>
+							<dic class="center" change="-">
+								<img src="../images/switchDown.png" alt="" >
+							</dic>
+						</div>
+            <p>Rating</p>
+          </div>
+        </div>
+        <div class="footer__blocko"></div>
+        <div class="footer__hideBlock"></div>
+    </main>
+    <div class="info center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+			<footer class="buttons beet">
+				<div class="buttons__button1 center">
+					<div class="buttons__create beet" status="store" type="add">
+						<img src="../images/plus.png" alt="" >
+						<p>Create</p>
+					</div>
+				</div>
+				<div class="buttons__button2">
+					<div class="buttons__create beet" status="product" type="add">
+						<img src="../images/plus.png" alt="" >
+						<p>Create</p>
+					</div>
+					<div class="buttons__delete beet" status="storage" type="delete">
+						<img src="../images/bin.png" alt="">
+						<p>Delete</p>
+					</div>
+				</div>
+      </footer>
+      <div class="details center">
+        <div class="details__fon"></div>
+        <div class="warning beet2">
+          <div class="warning__title">Confirmation</div>
+          <div class="warning__line"></div>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="warning__line"></div>
+          <div class="warning__buttons beet">
+            <div class="center" type="good">ok</div>
+            <div class="center" type="canel">canel</div>
+          </div>
+        </div>
+        <div class="add beet2" type="store">
+          <div class="add__top center">
+            <p>Create new store</p>
+          </div>
+          <div class="add__columns">
+            <div class="add__column">
+              <p>Name</p>
+              <input type="text" placeholder="Enter name">
+            </div>
+            <div class="add__column">
+              <p>Email</p>
+              <input type="text" placeholder="Enter email">
+            </div>
+            <div class="add__column">
+              <p>Phone Number</p>
+              <input type="text" placeholder="Enter phone number">
+            </div>
+            <div class="add__column">
+              <p>Address</p>
+              <input type="text" placeholder="Enter address">
+            </div>
+            <div class="add__column">
+              <p>Established</p>
+              <input type="date" placeholder="MMM d y">
+            </div>
+            <div class="add__column">
+              <p>Floor Area</p>
+              <input type="number" placeholder="Enter floor area (in sq m)">
+            </div>
+          </div>
+          <div class="add__bottom center">
+            <div class="add__swipe beet">
+              <div class="center" press="create" type="store">Create</div>
+              <div class="center" press="cancel" type="store">Cancel</div>
+            </div>
+          </div>
+        </div>
+        <div class="add beet2" type="product">
+          <div class="add__top center">
+            <p>Create new product</p>
+          </div>
+          <div class="add__columns">
+            <div class="add__column">
+              <p>Name</p>
+              <input type="text" placeholder="Enter name">
+            </div>
+            <div class="add__column">
+              <p>Price</p>
+              <input type="number" placeholder="Enter price (USD)">
+            </div>
+            <div class="add__column">
+              <p>Specs</p>
+              <input type="text" placeholder="Enter product specs">
+            </div>
+            <div class="add__column">
+              <p>Rating</p>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="add__column">
+              <p>Supplier Info</p>
+              <textarea placeholder="Enter Supplier Info"></textarea>
+            </div>
+            <div class="add__column">
+              <p>Made In</p>
+              <input type="text" placeholder="Enter origin country">
+            </div>
+            <div class="add__column">
+              <p>Production Company Name</p>
+              <input type="text" placeholder="Enter manufactured name">
+            </div>
+            <div class="add__column">
+              <p>Status</p>
+             <select>
+               <option value="OK">ok</option>
+               <option value="OUT_OF_STOCK">out of stock</option>
+               <option value="STORAGE">storage</option>
+             </select>
+            </div>
+          </div>
+          <div class="add__bottom center">
+            <div class="add__swipe beet">
+              <div class="center" press="create" type="product">Create</div>
+              <div class="center" press="cancel" type="product">Cancel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+	<script src="./controller.js"></script>
+</html>
